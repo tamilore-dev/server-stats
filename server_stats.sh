@@ -1,4 +1,4 @@
-#!/usr/bin/env bas#!/usr/bin/env bash
+#!/usr/bin/env bash
 set -euo pipefail
 
 cpu_usage=$(vmstat 5 2 | tail -1 | awk '{print 100 - $15}')
